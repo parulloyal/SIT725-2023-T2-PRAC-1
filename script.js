@@ -1,8 +1,9 @@
 function changeText() {
-    let textsArray = ['Text 1','Text 2','Text 3','Text 4'];
-    let number = getRandomNumber(0, textsArray.length - 1);
-    console.log(number);
-    document.getElementById('heading').innerHTML = textsArray[number];
+let potentialTexts = ['Text 1','Text 2','Text 3','Text 4','Text5'];
+let number = getRandomNumber(0, potentialTexts.length - 1);
+console.log(number);
+let textToChangeTo = potentialTexts[number];
+document.getElementById('heading').innerHTML = textToChangeTo;
 }
 
 function getRandomNumber(min, max) {
